@@ -1,6 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import AuditServer from './views/AuditServer.vue'
+import SearchPage from './views/SearchPage.vue'
+import Audits from './views/Audits.vue'
+import Reports from './views/Reports.vue'
+import ServersReports from './views/ServersReports.vue'
 
 Vue.use(Router)
 
@@ -12,6 +17,31 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/server',
+      name: 'server',
+      component: AuditServer
+    },
+    {
+      path: '/searchServer',
+      name: 'searchServer',
+      component: SearchPage
+    },
+    {
+      path: '/audits',
+      name: 'audits',
+      component: Audits
+    },
+    {
+      path: '/reports',
+      name: 'reports',
+      component: Reports
+    },
+    {
+      path: '/serversReports',
+      name: 'serversReports',
+      component: ServersReports
     },
     {
       path: '/about',
